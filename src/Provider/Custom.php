@@ -107,7 +107,6 @@ class Custom extends Provider {
 	public function convertFields(ResourceOwnerInterface $user) {
 		$userData = $user->toArray();
 		
-		die('d');
 		return [
 			'id'			=>	$userData['id'],
 			'user_login'	=>	'',
