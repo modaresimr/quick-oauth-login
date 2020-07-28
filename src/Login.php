@@ -67,6 +67,7 @@ class Login {
 	public static function doAuth(Provider $provider, $token, $providerUserData) {
 		$user = false;
 		$data = $provider->convertFields($providerUserData);
+		var_dump($data);
 		$action = 'login';
 
 		if (is_user_logged_in()) {
@@ -96,7 +97,6 @@ class Login {
 		// unknown user and unknown email
 		if (!$user && empty($data['user_email'])) {
 			$errorMessage = sprintf(__('This account is not linked to our site. Please <strong>Login</strong> or <strong>Register</strong> first, then link your %s account.', 'quick-login'), $provider->getLabel());
-
 			wp_redirect($provider->getLoginUrl([
 				'error'	=>	urlencode($errorMessage)
 			]));

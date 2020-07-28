@@ -1,7 +1,9 @@
 {
     "name": "layered/quick-login",
     "type": "wordpress-plugin",
-    "description": "Quick social login for WordPress sites",
+    "description": "Quick OAuth Login
+
+ for WordPress sites",
     "homepage": "https://layered.market/plugins/quick-login",
     "license": "GPL-3.0-or-later",
     "keywords": [

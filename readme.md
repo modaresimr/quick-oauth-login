@@ -1,7 +1,9 @@
-Quick Social Login
+Quick OAuth Login
+
 =========
 
-**Quick Social Login** adds integration for OAuth 2.0 service providers on your WordPress site!
+**Quick OAuth Login
+** adds integration for OAuth 2.0 service providers on your WordPress site!
 
 Faster login or register will increase the percent of logged in users on your site, especially helpful on e-commerce sites where the checkout should be as simple as possible.
 
@@ -14,6 +16,7 @@ Includes support for WooCommerce pages too!
 ## Features
 
 * One-click login with popular providers
+  * Any Oauth Clients
   * Twitter
   * Google
   * Facebook

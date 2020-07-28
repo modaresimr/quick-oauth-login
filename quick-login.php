@@ -1,12 +1,13 @@
 <?php
 /*
-Plugin Name: Quick Social Login
-Plugin URI: https://layered.market/plugins/quick-login
-Description: Enable secure login & registration with social accounts! Supports Twitter, Facebook, Google, WordPress.com, LinkedIn and Slack.
-Version: 1.4.2
-Text Domain: quick-login
-Author: Layered
-Author URI: https://layered.market
+Plugin Name: Quick OAuth Login
+
+Plugin URI: 
+Description: Enable secure login & registration with social accounts! Supports OAuth, Twitter, Facebook, Google, WordPress.com, LinkedIn and Slack.
+Version: 1.5.0
+Text Domain: quick-oauth-login
+Author: modaresimr
+Author URI: https://github.com/modaresimr/quick-oauth-login
 License: GPL-3.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -38,6 +39,7 @@ add_filter('quick_login_providers', function(array $providers) {
 	$providers['wordpresscom'] = new \Layered\QuickLogin\Provider\WordPressCom;
 	$providers['linkedin'] = new \Layered\QuickLogin\Provider\LinkedIn;
 	$providers['slack'] = new \Layered\QuickLogin\Provider\Slack;
+	$providers['custom'] = new \Layered\QuickLogin\Provider\Custom;
 
 	return $providers;
 });

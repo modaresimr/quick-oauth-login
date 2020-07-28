@@ -199,7 +199,7 @@ class Buttons {
 									<li><strong><?php echo $fieldLabels[$field] ?></strong>: <?php echo $value ?></li>
 								<?php endif ?>
 							<?php endforeach ?>
-							<li><strong>Scope</strong>: <?php echo implode(', ', $providerInfo['scope']) ?></li>
+							<li><strong>Scope</strong>: <?php /*echo implode(', ', $providerInfo['scope'])*/ ?></li>
 						</ul>
 					<?php elseif ($user->ID == get_current_user_id()) : ?>
 						<a href="<?php echo $provider->getLoginUrl() ?>"><?php _e('Link account', 'quick-login') ?></a>
