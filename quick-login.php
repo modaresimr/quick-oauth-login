@@ -4,7 +4,7 @@ Plugin Name: Quick OAuth Login
 
 Plugin URI: 
 Description: Enable secure login & registration with social accounts! Supports OAuth, Twitter, Facebook, Google, WordPress.com, LinkedIn and Slack.
-Version: 1.5.0
+Version: 1.5.1
 Text Domain: quick-oauth-login
 Author: modaresimr
 Author URI: https://github.com/modaresimr/quick-oauth-login
